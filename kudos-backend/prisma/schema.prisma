@@ -24,9 +24,11 @@ model KudoBoard{
 
 model KudoCard{
   id Int @id @default(autoincrement())
-  message String
-  imgUrl String
-  author String
-  board KudoBoard @relation(fields:[boardId], references:[id])
+  title String
+  gifUrl String
+  description String?
+  authorId Int?
   boardId Int
+  upVote Int @default(0)
+  board KudoBoard @relation(fields:[boardId], references:[id])
 }

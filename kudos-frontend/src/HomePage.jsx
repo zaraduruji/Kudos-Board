@@ -23,11 +23,7 @@ function HomePage() {
     const fetchBoards = async () => {
       try {
         const response = await api.get('/boards');
-        const boardAndImg = response.data.map(board => ({
-          ...board,
-          randomImg: `https://picsum.photos/200/300?random=${Math.floor(Math.random() * 1000)}`,
-        }));
-        setBoards(boardAndImg);
+        setBoards(response.data);
       } catch (error) {
         console.error("Error fetching boards:", error);
       }
@@ -38,11 +34,7 @@ function HomePage() {
   const createBoard = async (data) => {
     try {
       const response = await api.post('/boards', data);
-      const newBoard = {
-        ...response.data,
-        randomImg: `https://picsum.photos/200/300?random=${Math.floor(Math.random() * 1000)}`,
-      };
-      setBoards([...boards, newBoard]);
+      setBoards([...boards, response.data]);
     } catch (error) {
       console.error('Error creating board:', error);
     }
