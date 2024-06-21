@@ -16,7 +16,7 @@ function BoardList({ boards, handleDisplayBoardPage, handleDelete, filter, searc
           title={board.title}
           image={board.imgUrl}
           category={board.category}
-          displayBoard={() => handleDisplayBoardPage(board)}
+          displayBoard={handleDisplayBoardPage}
           handleDelete={handleDelete}
           id={board.id}
         />
