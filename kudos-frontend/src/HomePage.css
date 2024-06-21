@@ -5,6 +5,7 @@ body {
   padding: 0;
   background-color: #f4f4f4; /* Light background color */
   color: #333; /* Text color */
+  justify-content: center;
 }
 
 .App {
@@ -16,6 +17,7 @@ header {
   padding: 20px;
   color: white;
   width: 100%; /* Ensure header spans full width */
+
 }
 
 main {
