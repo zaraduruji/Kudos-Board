@@ -1,0 +1,10 @@
+/* src/components/Footer.css */
+
+footer {
+    background-color: #f8f9fa; /* Light gray background */
+    color: #333; /* Dark text color */
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    border-top: 1px solid #ddd;
+  }

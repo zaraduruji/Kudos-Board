@@ -1,0 +1,118 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light background color */
+    color: #333; /* Text color */
+  }
+
+  .App {
+    text-align: center;
+  }
+
+  header {
+    background-color: #4CAF50; /* Green background */
+    padding: 20px;
+    color: white;
+    width: 100%; /* Ensure header spans full width */
+  }
+
+  main {
+    padding: 20px;
+    max-width: 1200px; /* Limit main content width */
+    margin: auto;
+  }
+
+  footer {
+    background-color: #4CAF50; /* Match footer to header */
+    color: white;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+  }
+
+  /* Filter Buttons */
+  .filter-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+
+  .filter-buttons button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .filter-buttons button:hover {
+    background-color: #555;
+  }
+
+  .filter-buttons button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #555;
+  }
+
+  .filter-buttons .create-board-button {
+    background-color: #007BFF; /* Blue background */
+    color: white;
+  }
+
+  .filter-buttons .create-board-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+
+  /* Board List */
+  .board-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .board-list .board {
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .board img {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .filter-buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .filter-buttons button {
+      width: 80%;
+    }
+
+    .board-list .board {
+      width: 80%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .filter-buttons button {
+      width: 100%;
+    }
+
+    .board-list .board {
+      width: 100%;
+    }
+  }

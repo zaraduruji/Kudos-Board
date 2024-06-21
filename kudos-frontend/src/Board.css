@@ -1,0 +1,58 @@
+/* src/Board.css */
+
+.board {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 200px;
+    margin: 20px;
+    text-align: left;
+  }
+
+  .board:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .board img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+
+  .board h3 {
+    margin: 10px;
+    font-size: 18px;
+    color: #333;
+  }
+
+  .board p {
+    margin: 10px;
+    font-size: 14px;
+    color: #777;
+  }
+
+  .delete-and-view-buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-top: 1px solid #f5f5f5;
+  }
+
+  .view-button, .delete-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+  }
+
+  .delete-button {
+    background-color: #dc3545;
+  }
+
+  .view-button:hover, .delete-button:hover {
+    opacity: 0.8;
+  }
